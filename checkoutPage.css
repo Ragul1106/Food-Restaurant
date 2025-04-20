@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0a8d45;
+    color: white;
+    letter-spacing: 2px;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.2rem ;
+    /* flex-wrap: wrap; */
+  }
+  
+  .logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 20px;
+    background-color: white;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 140px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    position: relative;
+    /* letter-spacing: 1px; */
+  }
+  
+  .login-btn i {
+    margin-left: 5px;
+  }
+  
+  
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 50px; 
+    padding: 0 20px; 
+}
+
+.header-row h2 {
+    flex: 1;
+    text-align: center;
+    font-size: 2rem;
+    margin-left: 0;
+    
+}
+ 
+  .arrow {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin-left: 8rem;
+} 
+  
+  .arrow:hover {
+    cursor: pointer;
+  }
+  
+  .arrow i {
+    color: white;
+  }
+  
+  .arrow:hover i {
+    color: goldenrod;
+  }
+
+  
+/*  */
+  
+  .checkout-container {
+    position: relative;
+    letter-spacing: 2px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    margin-top: 10px;
+  }
+  
+  .step-line {
+    margin-top: 45px;
+    position: absolute;
+    top: 0;
+    left: 42px; 
+    width: 1px;
+    height: 685px;
+    background: linear-gradient(to bottom, rgb(5, 239, 5) 50%, white 50%);
+    z-index: 1;
+  }
+  
+  .checkout-section {
+    position: relative;
+    margin-left: 60px;
+    margin-bottom: 50px;
+    z-index: 1;
+  }
+  
+  .step-circle {
+    position: absolute;
+    left: -72px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ccc;
+  }
+  
+  .step-circle.green {
+    background-color: rgb(5, 239, 5);
+  }
+  
+  .step-circle.gray {
+    background-color: #d5d5d5;
+  }
+  
+/*  */
+.step-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40px; 
+    position: relative;
+    z-index: 2; 
+  }
+  
+  .circle {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border: 3px solid green;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  
+  .step-label {
+    color: white;
+    font-size: 26px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+
+/*  */
+
+  h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+  
+  label {
+    display: block;
+    font-size: 16px;
+    margin: 15px 0 5px;
+    letter-spacing: 1px;
+  }
+  
+  .input-box {
+    background: transparent;
+    border: 2px solid #5ecf8f;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+    line-height: 1.5;
+  }
+  
+  .payment-option {
+    margin-top: 20px;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-logos img {
+    height: 40px;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  
+
+  footer {
+    background-color: rgb(193, 246, 221);
+    padding: 2rem 0;
+    text-align: center;
+    color: black;
+  }
+  .content {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+  }
+  
+  .contact {
+    width: 30%;
+    text-align: center;
+    text-align: left;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 1rem;
+    gap: 2rem;
+  }
+  
+  .products {
+    text-align: left;
+    letter-spacing: 2px;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .quick-links {
+    text-align: left;
+    letter-spacing: 2px;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+  }
+  
+  .opening-hours {
+    text-align: left;
+    letter-spacing: 2px;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+  }
+  
+  .contact img {
+    width: 100px; 
+    height: auto;
+    margin-bottom: 20px;
+    background-color: thistle;
+    border-radius: 50%;
+  }
+  
+  .contact p, .quick-links a, .opening-hours p {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .social a img {
+    width: 50px; 
+    height: 40px;
+    margin-right: 30px;
+    mix-blend-mode: multiply;
+  }
+
+
+  /* Add this at the bottom of your CSS for responsiveness */
+
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .nav-links {
+      gap: 30px;
+    }
+  
+    .header-row h2 {
+      font-size: 1.5rem;
+      margin-left: 0;
+    }
+  
+    .arrow {
+      margin-left: 0;
+    }
+  
+    .checkout-container {
+      padding: 20px;
+    }
+  
+    .step-line {
+      left: 20px;
+      height: auto;
+    }
+  
+    .checkout-section {
+      margin-left: 40px;
+    }
+  
+    .step-circle {
+      left: -50px;
+    }
+  
+    .step-wrapper {
+      flex-direction: row;
+      gap: 10px;
+      margin-top: 30px;
+    }
+  
+    .circle {
+      width: 25px;
+      height: 25px;
+    }
+  
+    .step-label {
+      font-size: 18px;
+    }
+  
+    label, .input-box {
+      font-size: 14px;
+    }
+  
+    .card-logos img {
+      height: 30px;
+      margin: 10px 5px;
+    }
+  
+    .content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact, .products, .quick-links, .opening-hours {
+      width: 100%;
+      text-align: center;
+      align-items: center;
+      padding-bottom: 30px;
+    }
+  
+    .social a img {
+      width: 40px;
+      height: 35px;
+      margin: 0 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav-links {
+      gap: 20px;
+      flex-direction: column;
+    }
+  
+    .header-row h2 {
+      font-size: 1.2rem;
+    }
+  
+    .circle {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .step-label {
+      font-size: 16px;
+    }
+  
+    .input-box {
+      padding: 10px;
+      font-size: 16px;
+    }
+  }
+  

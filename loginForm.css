@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image:url(images/snow-falling-white-star.png) ;
+    background-size: contain;
+    letter-spacing: 2px;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-right: 200px;
+  }
+  
+  .login-box {
+    background: transparent;
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .login-box h2 {
+    margin-bottom: 10px;
+  }
+  
+  .promo-text {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  form input {
+    width: 450px;
+    padding: 10px;
+    margin: 10px 0;
+    letter-spacing: 2px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    background: transparent;
+  }
+  
+  .login-btn{
+    text-decoration: none;
+    background: black;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    width: 350px;
+    margin-top: 25px;
+    margin-left: 35px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+ 
+  .or {
+    margin-top: 20px;
+    margin-left: 40px;
+    font-weight: bold;
+  }
+  
+  .signup-text {
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-top: 40px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  
+  .social-icons i {
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .social-icons i:hover {
+    color: #ff6600;
+  }
+  
+  .create-account {
+    font-size: 13px;
+    margin-top: 20px;
+  }
+  
+  .create-account a {
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+  
+ 
+#toggle-login:checked + #login-container {
+    display: none;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    margin-top: 50px;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .close-btn:hover {
+    color: red;
+  }
+  
+  .login-box {
+    position: relative;
+  }
+
+  @media (max-width: 768px) {
+    .login-container {
+      margin-right: 0;
+      padding: 20px;
+      height: auto;
+      min-height: 100vh;
+    }
+  
+    .login-box {
+      padding: 30px 20px;
+      max-width: 100%;
+    }
+  
+    form input {
+      width: 100%;
+    }
+  
+    .login-btn {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .or,
+    .signup-text,
+    .social-icons {
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .social-icons {
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      letter-spacing: 1px;
+    }
+  
+    .login-box h2 {
+      font-size: 1.5rem;
+    }
+  
+    .promo-text {
+      font-size: 13px;
+    }
+  
+    .login-btn {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  
+    .social-icons i {
+      font-size: 18px;
+    }
+  
+    .create-account {
+      font-size: 12px;
+    }
+  
+    .close-btn {
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+    }
+  }
+  
+  

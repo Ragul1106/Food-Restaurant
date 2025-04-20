@@ -1,0 +1,328 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #098c43;
+    color: white;
+    margin-top: 70px; /* Adjust as needed for fixed header */
+}
+
+/* Header Section */
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px; /* Reduced margin-bottom */
+    padding: 0 20px; /* Add some padding on the sides */
+}
+
+.header-row h2 {
+    flex: 1;
+    text-align: center;
+    font-size: 2rem;
+    margin-left: 0;
+    
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+.arrow i {
+    color: white;
+}
+
+.arrow:hover i {
+    color: goldenrod;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: goldenrod;
+}
+
+/* Cart Container */
+.cart-container {
+    max-width: 1080px; /* Increased max-width to accommodate the gaps */
+    margin: 30px auto;
+}
+
+.cart-main {
+    display: flex;
+    gap: 100px; /* Gap between items and summary */
+    margin-bottom: 30px;
+}
+
+/* LEFT - Cart Items */
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%; /* Adjust width as needed */
+}
+
+.cart-item {
+    background-color: white;
+    border-radius: 15px; /* Slightly less rounded */
+    padding: 15px; /* Adjust padding */
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Adjust gap */
+    color: black;
+}
+
+.cart-item img {
+    width: 70px; /* Adjust image size */
+    height: 70px; /* Adjust image size */
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.item-content {
+    flex: 1;
+}
+
+.item-content h2 {
+    font-size: 1.1rem; /* Adjust font size */
+    font-weight: bold;
+    margin-bottom: 3px; /* Adjust margin */
+}
+
+.item-content p {
+    font-size: 0.9rem; /* Adjust font size */
+    color: #555;
+    line-height: 1.4; /* Improve readability */
+}
+
+.item-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px; /* Adjust gap */
+}
+
+.price {
+    font-size: 1rem; /* Adjust font size */
+    font-weight: bold;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Adjust gap */
+    font-size: 0.9rem; /* Adjust font size */
+}
+
+.quantity button {
+    background-color: #e74c3c; /* Red color */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px; /* Adjust size */
+    height: 20px; /* Adjust size */
+    font-size: 1rem; /* Adjust font size */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1; /* Center the text */
+    padding: 0; /* Remove default button padding */
+}
+
+.cart-icon {
+    background-color: #0d8c44;
+    border: none;
+    padding: 6px 10px; /* Adjust padding */
+    border-radius: 8px; /* Slightly less rounded */
+    color: white;
+    font-size: 1rem; /* Adjust font size */
+    cursor: pointer;
+}
+
+/* RIGHT - Cart Summary */
+.cart-summary {
+    background-color: #0d8c44;
+    padding: 20px;
+    border-radius: 15px;
+    width: 50%; 
+    box-sizing: border-box;
+    position: sticky;
+    top: 20px;
+    align-self: flex-start;
+}
+
+.coupon {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    background-color: rgb(54, 55, 56);
+    opacity: 0.5;
+    padding: 20px 20px;
+    border-radius: 20px;
+}
+
+.coupon input {
+    padding: 8px 12px; /* Adjust padding */
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    color: rgb(190, 243, 190); /* Ensure text is readable */
+}
+.coupon ::placeholder{
+    color: rgb(190, 243, 190);
+}
+.summary span{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.summary hr{
+    margin-bottom: 25px;
+}
+.coupon button {
+    background-color: white;
+    border: none;
+    padding: 10px 35px; 
+    letter-spacing: 2px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+}
+
+.summary .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px; 
+    font-size: 1rem; 
+}
+
+.total {
+    font-weight: bold;
+    font-size: 1.2rem; 
+    margin-top: 10px;
+}
+
+hr {
+    border: 0.5px solid rgba(255, 255, 255, 0.5); 
+    margin: 10px 0;
+}
+
+.checkout {
+    background-color: #e74c3c; 
+    color: white;
+    width: 100%;
+    padding: 12px; /* Adjust padding */
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem; /* Adjust font size */
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px; /* Add some space above the button */
+}
+
+/* Responsive Design (Example - Adjust breakpoints as needed) */
+@media (max-width: 768px) {
+    .cart-main {
+        flex-direction: column; /* Stack items and summary on smaller screens */
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .cart-items {
+        width: 100%;
+    }
+
+    .cart-summary {
+        width: 100%;
+        position: static; /* Disable sticky on smaller screens */
+    }
+
+    .header-row h2 {
+        font-size: 1.7rem;
+    }
+
+    .cart-item {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .cart-item img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .item-content h2 {
+        font-size: 1rem;
+    }
+
+    .item-content p {
+        font-size: 0.8rem;
+    }
+
+    .price {
+        font-size: 0.9rem;
+    }
+
+    .quantity {
+        font-size: 0.8rem;
+    }
+
+    .cart-icon {
+        font-size: 0.9rem;
+        padding: 5px 8px;
+    }
+
+    .coupon {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .coupon input {
+        padding: 6px 10px;
+    }
+
+    .coupon button {
+        padding: 8px 12px;
+    }
+
+    .summary .row {
+        font-size: 0.9rem;
+    }
+
+    .total {
+        font-size: 1.1rem;
+    }
+
+    .checkout {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
