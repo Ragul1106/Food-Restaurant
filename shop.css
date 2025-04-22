@@ -1,7 +1,5 @@
-/* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-/* Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -376,7 +374,7 @@ footer {
   }
 
   .logo img {
-    margin-left: 160px;
+    margin-left: 140px;
   } 
 
   .arrow{
@@ -416,9 +414,13 @@ footer {
     width: 90%;
     margin: 2rem 50px;
   }
+  /* .search-bar .fa-search {
+    text-align: end;
+  } */
 
   .search-bar input::placeholder {
     font-size: 1rem;
+    text-align: start;
   }
 
   .nav-links {

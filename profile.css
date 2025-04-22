@@ -1,3 +1,4 @@
+/* Base Styles */
 body {
     font-family: sans-serif;
     margin: 0;
@@ -15,31 +16,32 @@ h2 {
 
 .profile-section {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    gap: 20px;
+    flex-wrap: nowrap; 
 }
 
-.form {
-    width: 45%;
-    padding: 50px;
+.form, .profile {
+    flex: 1;
+    min-width: 300px;
+    max-width: 48%;
+    box-sizing: border-box;
+    padding: 40px;
     border-radius: 8px;
-    margin: 10px;
 }
 
 .form label {
     display: block;
     margin-bottom: 5px;
-    margin-left: 50px;
     font-weight: bold;
     color: rgb(157, 194, 83);
 }
 
 .form input, .form textarea {
-    width: 70%;
-    margin-bottom: 45px;
-    margin-left: 50px;
-    padding-bottom: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
     border: none;
     color: white;
     font-weight: bolder;
@@ -59,11 +61,7 @@ h2 {
 }
 
 .profile {
-    width: 45%;
     text-align: center;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 10px;
 }
 
 .profile img {
@@ -76,13 +74,14 @@ h2 {
 
 .profile-buttons {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
 }
 
 .profile-buttons button, .profile button.logout {
-    padding: 10px 40px;
-    margin: 0 5px;
+    padding: 10px 30px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -94,12 +93,13 @@ h2 {
     background-color: #fff;
     color: #333;
     border: 1px solid #ccc;
+    margin-right: 80px;
 }
 
 .profile-buttons button.save {
     background-color: #dc3545;
-    padding: 10px 60px;
     color: #fff;
+    margin-left: 80px;
 }
 
 .profile a.logout-link {
@@ -110,61 +110,32 @@ h2 {
 }
 
 .profile a.logout-link button.logout {
-    padding: 10px 60px;
-    margin: 20px 200px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
+    padding: 10px 30px;
+    margin: 40px auto;
+    display: block;
     background-color: black;
     color: white;
-    border: none;
-    display: block;
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    .form {
-        width: 100%;
-        padding: 20px;
-    }
-
-    .profile {
-        width: 100%;
-        padding: 20px;
-    }
-
+@media (max-width: 900px) {
     .profile-section {
         flex-direction: column;
         align-items: center;
     }
 
+    .form, .profile {
+        max-width: 700px;
+        width: 90%;
+    }
+
     .profile-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .profile-buttons button, .profile button.logout {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .profile a.logout-link button.logout {
-        width: 100%;
-        margin: 10px 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
 @media (max-width: 480px) {
-    .form input, .form textarea {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .form label {
-        margin-left: 0;
-    }
-
     h2 {
         font-size: 1.5rem;
     }
@@ -174,11 +145,13 @@ h2 {
         height: 150px;
     }
 
-    .profile-buttons button, .profile button.logout {
-        padding: 10px 30px;
+    .profile-buttons button, 
+    .profile a.logout-link button.logout {
+        width: 100%;
+        margin: 10px 0;
     }
 
-    .profile a.logout-link button.logout {
-        padding: 10px 30px;
+    .form input, .form textarea {
+        width: 100%;
     }
 }

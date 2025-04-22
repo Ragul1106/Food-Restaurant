@@ -277,9 +277,6 @@
     mix-blend-mode: multiply;
   }
 
-
-  /* Add this at the bottom of your CSS for responsiveness */
-
 @media (max-width: 768px) {
     .navbar {
       flex-direction: column;

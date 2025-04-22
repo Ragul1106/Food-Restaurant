@@ -246,9 +246,6 @@
     mix-blend-mode: multiply;
   }
 
-  /* Existing styles remain unchanged above */
-
-/* ====== RESPONSIVE DESIGN ====== */
 @media (max-width: 1024px) {
   .nav-links {
     gap: 80px;
